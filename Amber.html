@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <style>
+    * {
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+body{ background-color: rgb(255, 248, 241); height: 100%;}
+.menu{ background-color: orange;
+       height: 90px; 
+       width: 100%;
+       margin: 0;
+       padding: 0;
+       position: fixed;
+       top: 0;
+       left: 0;
+       z-index: 1000;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;}
+
+.menu1 :hover{font-size: 22px;
+            color: rgb(17, 0, 48);}
+.menu2 :hover{font-size: 22px;
+            color: rgb(17, 0, 48);}
+.menu3 :hover{font-size: 22px;
+            color: rgb(17, 0, 48);}
+
+
+  .menu ul {
+      list-style: none;
+      display: flex;
+      gap: 310px;
+      margin: 0;
+      padding: 60px;
+    }
+
+    .menu li {
+      display: inline;
+    }
+
+    .menu a {
+      color: rgba(0, 0, 0, 0.750);
+      text-decoration: none;
+      font-size: 22px;}
+    
+.ambulancia{ max-width: 50%;
+            height: auto;
+            margin-top: 100px;
+            flex: 1;
+            text-align: center;
+            
+
+
+}
+.emergencia{display: inline-block;
+            background-color: orangered;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 22px 45px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            position: relative;
+            top: 20px;
+           }
+            
+
+.container{display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 20px;
+            gap: 70px;
+            margin-top: 85px;
+}
+
+#mapa h2{ color: rgb(0, 0, 0);
+          text-align: center;
+          padding: 0;
+          }
+
+#mapa img{ height: 450px;
+           margin: auto;
+          }
+
+ #mapa{ display: flex;
+        flex-direction: column;
+        padding-top: 120px;}
+#funciona h2{ color: rgb(0, 0, 0);
+          text-align: center;
+          padding: 0;
+          padding-top: 85px;}
+.esquerda{
+          flex: 1;
+          padding-right: 20px;
+          max-width: 50%;
+          margin-top: -20px;
+}
+.etapas{display: flex;
+      justify-content: center;
+      gap: 100px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .etapas p{ font-size: 28px;}
+    .passo {
+      background: white;
+      padding: 18px;
+      border-radius: 11px;
+      box-shadow: 0 0 11px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+    }
+    
+    .icone {
+      font-size: 30px;
+      margin-bottom: 8px;
+      text-align: center;}
+
+.fim{ background-color: rgb(255, 206, 114);
+       height: 130px; 
+       width: 100%;
+       margin: 0px;
+       margin-top: 85px;
+       padding: 0px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       }
+
+
+ .fim p{ font-size: 19px;}
+
+
+h1{font-size: 25px;}
+h2{ font-size: 40px;}
+h4{ font-size: 30px}
+h3{font-size: 23px ;}
+p{  font-size: 28px;}
+
+
+
+  </style>
+ </head>
+
+ <body>
+  <div class="menu">
+  <h1> Amber</h1>
+
+    <ul> 
+    <li class="menu1"><a href="#inicio"> Amber </a></li>
+    <li class="menu2"><a href="#mapa"> Ambulâncias Proximas  </a></li>
+    <li class="menu3"><a href="#funciona"> Como Funcionamos? </a></li>
+    
+  </ul>
+  </div>
+
+  
+  <div class="container" id="inicio"> 
+    
+    <div class="esquerda" >
+    <h2> AMBER</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam.</p>
+    
+    <a href="solicitar.html" class="emergencia">EMERGÊNCIA</a>
+    </div>
+
+    <img src="ambulancial.png" class="ambulancia">
+    
+  </div>
+
+  <div  id="mapa">
+  <h2> Ambulâncias Proximas </h2>
+
+  <img src="mapas.png" >
+  </div>
+
+  <div id="funciona">
+  <h2>Como Funcionamos?</h2>
+     <div class="etapas">
+
+       <div class="passo">
+        <div class="icone">📞</div>
+        <h4>passo 1</h4>
+        <p> Clique no botão de emergência ou preencha o formulário com os dados</p>
+      </div>
+      
+      
+      <div class="passo">
+       <div class="icone">📍</div>
+        <h4>passo 2</h4>
+        <p> Identificamos a ambulância mais próxima e direcionamos para você</p>
+      </div>
+
+      <div class="passo">
+        <div class="icone">💓</div>
+        <h4>passo 3</h4>
+        <p> Equipe médica qualificada chega rapidamente para o atendimento</p>
+      </div>
+
+     </div>
+  </div>
+
+  <div class="fim"> 
+   <div>
+    <h1>AMBER</h1>
+   </div>
+
+   <div> 
+    <h3>emergência</h3>
+    <p> SAMU: 192 <br> Bombeiros: 193 </p>
+   </div>
+   <div>
+   <h3>Serviços</h3>
+    <p> UTI Movel <br> Transporte Medico </p>
+   </div>
+
+   <div> 
+    <h3>Contato</h3>
+    <p> amber@gmail.com <br> (41)98765-4321</p>
+   </div>
+
+  </div>
+
+ </body>
+</html>

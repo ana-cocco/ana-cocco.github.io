@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Ambulância</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+button {
+    display: block;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solicitar Ambulância</h1>
+    <form>
+        <label>Nome do Paciente</label>
+        <input type="text" name="nome" required>
+
+        <label>Nível de Urgência</label>
+        <select name="urgencia" required>
+            <option value="">Selecione</option>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+
+        <label>Idade</label>
+        <input type="number" name="idade" required>
+
+        <label>Sintomas / Descrição</label>
+        <textarea name="descricao" rows="4" required></textarea>
+
+        <label>Endereço</label>
+        <input type="text" name="endereco" required>
+
+        <label>Telefone de Contato</label>
+        <input type="tel" name="telefone" required>
+
+        
+        <a href="Amber.html">
+  <button type="button">Enviar Solicitação</button>
+        </a>
+        
+    </form>
+</body>
+</html>
