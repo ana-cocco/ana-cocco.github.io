@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <style>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Baloo+2:wght@700&family=Chewy&display=swap" rel="stylesheet">
+    <style>
     * {
         margin:0;
         padding:0;
@@ -11,8 +12,8 @@
         vertical-align:baseline;
         background:transparent;
     }
-body{ background-color: rgb(255, 248, 241); height: 100%;}
-.menu{ background-color: orange;
+body{ background-color: beige; height: 100%;}
+.menu{ background-color: rgb(252, 162, 73);
        height: 90px; 
        width: 100%;
        margin: 0;
@@ -23,7 +24,8 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
        z-index: 1000;
        display: flex;
        justify-content: space-between;
-       align-items: center;}
+       align-items: center;
+     font-family: 'League Spartan', sans-serif;}
 
 .menu1 :hover{font-size: 22px;
             color: rgb(17, 0, 48);}
@@ -46,9 +48,9 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
     }
 
     .menu a {
-      color: rgba(0, 0, 0, 0.750);
+      color: rgba(36, 18, 8, 0.85);
       text-decoration: none;
-      font-size: 22px;}
+      font-size: 20px;}
     
 .ambulancia{ max-width: 50%;
             height: auto;
@@ -60,8 +62,8 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
 
 }
 .emergencia{display: inline-block;
-            background-color: orangered;
-            color: white;
+            background-color: rgb(255, 90, 0);  
+            color: rgb(255, 255, 255);
             font-size: 25px;
             font-weight: bold;
             padding: 22px 45px;
@@ -70,6 +72,8 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
             text-decoration: none;
             position: relative;
             top: 20px;
+             font-family: 'League Spartan', sans-serif;
+             font-weight: 800;        
            }
             
 
@@ -78,7 +82,7 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
             justify-content: space-between; 
             padding: 20px;
             gap: 70px;
-            margin-top: 85px;
+            margin-top: 90px;
 }
 
 #mapa h2{ color: rgb(0, 0, 0);
@@ -103,7 +107,11 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
           flex: 1;
           padding-right: 20px;
           max-width: 50%;
-          margin-top: -20px;
+          margin-top: 55px;
+}
+.esquerda p{ padding-top: 22px;
+             padding-bottom: 22px;
+
 }
 .etapas{display: flex;
       justify-content: center;
@@ -112,7 +120,10 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
       margin-top: 40px;
     }
 
-    .etapas p{ font-size: 28px;}
+    .etapas p{ font-size: 26px;
+               margin-top: 5px;
+               font-family: 'League Spartan', sans-serif;
+              }
     .passo {
       background: white;
       padding: 18px;
@@ -120,6 +131,7 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
       box-shadow: 0 0 11px rgba(0,0,0,0.1);
       width: 250px;
       text-align: center;
+      
     }
     
     .icone {
@@ -127,8 +139,8 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
       margin-bottom: 8px;
       text-align: center;}
 
-.fim{ background-color: rgb(255, 206, 114);
-       height: 130px; 
+.fim{ background-color: rgba(253, 170, 76, 0.5);
+       height: 110px; 
        width: 100%;
        margin: 0px;
        margin-top: 85px;
@@ -138,19 +150,31 @@ body{ background-color: rgb(255, 248, 241); height: 100%;}
        }
 
 
- .fim p{ font-size: 19px;
+ .fim p{ font-size: 18px;
         padding-right: 50px;
         padding-top: 9px;
+        font-family: 'league spartan', sans-serif;
       }
 
 
 
 h1{font-size: 25px;
-   padding-left: 15px;}
-h2{ font-size: 40px;}
-h4{ font-size: 30px}
+   padding-left: 15px;
+   font-family: 'Fredoka', sans-serif;
+  color: rgb(44, 19, 4);
+   letter-spacing: 2px;}
+h2{ font-size: 49px;
+    font-family: 'League Spartan', sans-serif;
+     font-weight: 800;
+  
+     }
+h4{ font-size: 29px;
+     font-family: 'League Spartan', sans-serif;
+            }
 h3{font-size: 23px ;}
-p{  font-size: 28px;}
+p{  font-size: 28px;
+    font-family: 'League Spartan', sans-serif;
+     font-weight: 400;}
 
 
 
@@ -163,7 +187,7 @@ p{  font-size: 28px;}
 
     <ul> 
     <li class="menu1"><a href="#inicio"> Amber </a></li>
-    <li class="menu2"><a href="#mapa"> Ambulâncias Proximas  </a></li>
+    <li class="menu2"><a href="#mapa"> Ambulâncias Próximas  </a></li>
     <li class="menu3"><a href="#funciona"> Como Funcionamos? </a></li>
     
   </ul>
@@ -173,9 +197,8 @@ p{  font-size: 28px;}
   <div class="container" id="inicio"> 
     
     <div class="esquerda" >
-    <h2> AMBER</h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam.</p>
+    <h2> Amber,</h2>
+    <p> Conectamos você à ambulância mais próxima, de forma rápida e segura. Atendimento ágil, tecnologia na palma da mão. Quando há uma emergência, cada segundo importa.</p>
     
     <a href="solicitar.html" class="emergencia">EMERGÊNCIA</a>
     </div>
@@ -185,7 +208,7 @@ p{  font-size: 28px;}
   </div>
 
   <div  id="mapa">
-  <h2> Ambulâncias Proximas </h2>
+  <h2> Ambulâncias Próximas </h2>
 
   <img src="mapas.png" >
   </div>
@@ -196,21 +219,21 @@ p{  font-size: 28px;}
 
        <div class="passo">
         <div class="icone">📞</div>
-        <h4>passo 1</h4>
-        <p> Clique no botão de emergência ou preencha o formulário com os dados</p>
+        <h4>Passo 1</h4>
+        <p> Clique no botão de emergência, solicite uma ambulância e preencha o formulário com seus dados.</p>
       </div>
       
       
       <div class="passo">
        <div class="icone">📍</div>
-        <h4>passo 2</h4>
-        <p> Identificamos a ambulância mais próxima e direcionamos para você</p>
+        <h4>Passo 2</h4>
+        <p>  Localizamos a ambulância mais próxima e direcionamos até você.</p>
       </div>
 
       <div class="passo">
         <div class="icone">💓</div>
-        <h4>passo 3</h4>
-        <p> Equipe médica qualificada chega rapidamente para o atendimento</p>
+        <h4>Passo 3</h4>
+        <p> A equipe médica capacitada chega rapidamente para prestar atendimento.</p>
       </div>
 
      </div>
@@ -224,7 +247,7 @@ p{  font-size: 28px;}
 
 
    <div> 
-    <h3>emergência</h3>
+    <h3>Emergência</h3>
     <p> SAMU: 192 <br> Bombeiros: 193 </p>
    </div>
 
