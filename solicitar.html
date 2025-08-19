@@ -35,29 +35,30 @@
             border: 1px solid #ccc;
             border-radius: 6px;
         }
-button {
+.button {
     display: block;
-    background-color: red;
+    background-color: rgb(255, 90, 0);
     color: white;
     font-size: 20px;
     font-weight: bold;
     padding: 15px 30px;
     border-radius: 8px;
     text-decoration: none;
+    outline:none;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 20px auto;
 }
 
-button:hover {
-    background-color: darkred;
+.button:hover {
+    background-color:rgb(228, 65, 0);
         }
     </style>
 </head>
 <body>
     <h1>Solicitar Ambulância</h1>
-    <form>
+    <form action="index.html" method="post">
         <label>Nome do Paciente</label>
         <input type="text" name="nome" required>
 
@@ -82,9 +83,9 @@ button:hover {
         <input type="tel" name="telefone" required>
 
         
-        <a href="index.html">
-  <button type="button">Enviar Solicitação</button>
-        </a>
+       
+  <button type="submit" class="button">Enviar Solicitação</button>
+        
         
     </form>
 </body>
